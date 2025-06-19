@@ -1,0 +1,70 @@
+Agora a doideira generalizou!(Parte 2)
+
+
+Depois que os portais começaram a se multiplicar como pipoca mágica em micro-ondas encantado, uma nova missão foi definida pelo Conselho Supremo do AED+ (Arquiuniverso Encantado da Disney+), liderado por um holograma do Mestre Yoda usando o chapéu do Mickey Feiticeiro:
+
+Sua missão foi atualizada:
+
+Você agora deve montar um sistema ultrainteligente capaz de ler dados de todas as realidades cruzadas — e mais importante: ordenar tudo por release_year e title, nesta ordem. Afinal, nada atrapalha mais uma linha do tempo que um crossover desordenado entre “Encanto” e “Tron” com datas trocadas.
+
+Para isso, sua equipe heterogênea foi definida:
+
+• Iron Man (versão musical): para criar um sistema de leitura de dados interdimensionais com estilo e inteligência artificial que canta jazz.
+• Ursula (arrependida e reprogramada): perita em dados submersos e metadados ocultos de produções esquecidas dos anos 80.
+• Baymax: responsável por cuidar do bem-estar dos dados — e dos heróis feridos por informações corrompidas.
+• Elsa e Darth Vader (temporária trégua): controlam os portais de gelo e força para manter a ordem… por enquanto.
+• R2-D2 com orelhas do Dumbo: o único capaz de se conectar ao repositório central do AED+ e voar para reinicializar manualmente os fluxos temporais.
+
+E então, usando magia computacional combinada com lógica Jedi, os dados devem ser ordenados da seguinte forma:
+
+1 - Primeiro por release_year (do mais antigo ao mais novo).
+2 - Depois por title (ordem alfabética, em caso de anos iguais).
+
+Enquanto isso...
+Loki (ainda Olaf) está convencido de que é o novo guardião das geleiras de Miami e convocou um exército de mini-Olafs surfistas.
+
+Stitch está dando entrevistas como "Presidente Supremo do Multiverso da Diversão", enquanto os cem clones dele cantam "A Whole New World" em loop.
+
+E Grogu… bom, ele está se aproximando perigosamente do último arequipe encantado, enquanto Deadpool surge ao fundo com um sorvete e diz:
+
+"Vocês acham que isso aqui vai terminar com lógica? Tomara que sim, kkk."
+
+Entrada:
+
+A primeira linha de entrada contém um único inteiro N (1 ≤ N ≤ 1000), indicando a quantidade de produções Disney+
+A seguir virão N linhas contendo cada uma diversas informações, separada por ponto-e-vírgula. Você deve ler e organizar em memória essas informações de acordo com o seguinte layout:
+
+                                                                           
+Campo
+Tipo de Dado
+show_id
+string
+type
+string
+title
+string
+director
+string
+cast
+string
+country
+string
+date_added
+string
+release_year
+int
+rating
+string
+duration
+string
+listed_in
+string
+description
+string
+
+
+Saída:
+
+Como saída deverão ser gerados todos os N registros da entrada, a na ordem solicitada.
+
+ATENÇÃO : Não poderá ser nenhum método sort das classes disponíveis no C#. Você deverá uma das implementações mostradas pelo prof da Teoria e adaptá-la para a chave de ordenação composta, conforme pedido. Não abuse da sua sort ...
