@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Text;
 class Program
 {
     static void Main(string[] args)
@@ -11,7 +13,15 @@ class Program
             producoes[i] = new Producao(producao);
         }
         OrdenarPorData(producoes);
+        StreamWriter sw = new StreamWriter("data.txt", false, Encoding.UTF8);
+        for (int i = 0; i < producoes.Length; i++)
+            sw.WriteLine(producoes[i].Ano());
+        sw.Close();
         OrdemAlfabetica(producoes);
+        StreamWriter escritor = new StreamWriter("data2.txt", false, Encoding.UTF8);
+        for (int i = 0; i < producoes.Length; i++)
+            escritor.WriteLine(producoes[i].Titulo());
+        escritor.Close();
         for (int i = 0; i < producoes.Length; i++)
             Console.WriteLine(producoes[i].ToStringFormatado());
     }
@@ -34,13 +44,20 @@ class Program
 
     static void OrdemAlfabetica(Producao[] producoes)
     {
-        for (int i = 0; i < producoes.Length - 1; i++)
+        //bubblesort
+        bool houveTroca = true;
+        for (int i = 0; i < producoes.Length - 1 && houveTroca; i++)
         {
-            if ((producoes[i].Ano() == producoes[i + 1].Ano()) && (string.Compare(producoes[i].Titulo(), producoes[i + 1].Titulo()) > 0))
+            houveTroca = false;
+            for (int j = 0; j < producoes.Length - i - 1; j++)
             {
-                Producao temp = producoes[i];
-                producoes[i] = producoes[i + 1];
-                producoes[i + 1] = temp;
+                if ((producoes[j].Ano() == producoes[j + 1].Ano()) && (string.Compare(producoes[j].Titulo(), producoes[j + 1].Titulo()) > 0))
+                {
+                    Producao temp = producoes[j];
+                    producoes[j] = producoes[j + 1];
+                    producoes[j + 1] = temp;
+                    houveTroca = true;
+                }
             }
         }
     }
