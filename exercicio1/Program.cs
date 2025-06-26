@@ -3,7 +3,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Off the king the power demanded the bastard, the king the fairy goes ma");
         int n = int.Parse(Console.ReadLine());
         Producao[] producoes = new Producao[n];
         for (int i = 0; i < n; i++)
@@ -11,23 +10,56 @@ class Program
             string[] producao = Console.ReadLine().Split(';');
             producoes[i] = new Producao(producao);
         }
+        OrdenarPorData(producoes);
+        OrdemAlfabetica(producoes);
+        for (int i = 0; i < producoes.Length; i++)
+            Console.WriteLine(producoes[i].ToStringFormatado());
+    }
+
+    static void OrdenarPorData(Producao[] producoes)
+    {
+        //iremos utilizar o algoritmo de inserção
+        for (int i = 1; i < producoes.Length; i++)
+        {
+            Producao temp = producoes[i];
+            int j = i - 1;
+            while ((j >= 0) && (producoes[j].Ano() > temp.Ano()))
+            {
+                producoes[j + 1] = producoes[j];
+                j--;
+            }
+            producoes[j + 1] = temp;
+        }
+    }
+
+    static void OrdemAlfabetica(Producao[] producoes)
+    {
+        for (int i = 0; i < producoes.Length - 1; i++)
+        {
+            if ((producoes[i].Ano() == producoes[i + 1].Ano()) && (string.Compare(producoes[i].Titulo(), producoes[i + 1].Titulo()) > 0))
+            {
+                Producao temp = producoes[i];
+                producoes[i] = producoes[i + 1];
+                producoes[i + 1] = temp;
+            }
+        }
     }
 }
 class Producao
 {
     //atributos aqui
-    public string show_id;
-    public string type;
-    public string title;
-    public string director;
-    public string cast;
-    public string country;
-    public string date_added;
-    public int release_year;
-    public string rating;
-    public string duration;
-    public string listed_in;
-    public string description;
+    private string show_id;
+    private string type;
+    private string title;
+    private string director;
+    private string cast;
+    private string country;
+    private string date_added;
+    private int release_year;
+    private string rating;
+    private string duration;
+    private string listed_in;
+    private string description;
     //função construtora
     public Producao(string[] producao)
     {
@@ -44,6 +76,10 @@ class Producao
         listed_in = producao[10];
         description = producao[11];
     }
+
+    public int Ano() => release_year;
+
+    public string Titulo() => title;
 
     public string ToStringFormatado()
     {

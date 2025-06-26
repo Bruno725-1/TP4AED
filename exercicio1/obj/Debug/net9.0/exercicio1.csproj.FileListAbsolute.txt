@@ -1,0 +1,15 @@
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP4AED\exercicio1\bin\Debug\net9.0\exercicio1.exe
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP4AED\exercicio1\bin\Debug\net9.0\exercicio1.deps.json
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP4AED\exercicio1\bin\Debug\net9.0\exercicio1.runtimeconfig.json
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP4AED\exercicio1\bin\Debug\net9.0\exercicio1.dll
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP4AED\exercicio1\bin\Debug\net9.0\exercicio1.pdb
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP4AED\exercicio1\obj\Debug\net9.0\exercicio1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP4AED\exercicio1\obj\Debug\net9.0\exercicio1.AssemblyInfoInputs.cache
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP4AED\exercicio1\obj\Debug\net9.0\exercicio1.AssemblyInfo.cs
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP4AED\exercicio1\obj\Debug\net9.0\exercicio1.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP4AED\exercicio1\obj\Debug\net9.0\exercicio1.sourcelink.json
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP4AED\exercicio1\obj\Debug\net9.0\exercicio1.dll
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP4AED\exercicio1\obj\Debug\net9.0\refint\exercicio1.dll
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP4AED\exercicio1\obj\Debug\net9.0\exercicio1.pdb
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP4AED\exercicio1\obj\Debug\net9.0\exercicio1.genruntimeconfig.cache
+C:\Users\User\Documents\Faculdade\algoritmos e estruturas de dados\trabalhosPraticos\TP4AED\exercicio1\obj\Debug\net9.0\ref\exercicio1.dll
