@@ -1,6 +1,4 @@
 ﻿using System;
-using System.IO;
-using System.Text;
 class Program
 {
     static void Main(string[] args)
@@ -13,15 +11,7 @@ class Program
             producoes[i] = new Producao(producao);
         }
         OrdenarPorData(producoes);
-        StreamWriter sw = new StreamWriter("data.txt", false, Encoding.UTF8);
-        for (int i = 0; i < producoes.Length; i++)
-            sw.WriteLine(producoes[i].Ano());
-        sw.Close();
         OrdemAlfabetica(producoes);
-        StreamWriter escritor = new StreamWriter("data2.txt", false, Encoding.UTF8);
-        for (int i = 0; i < producoes.Length; i++)
-            escritor.WriteLine(producoes[i].Titulo());
-        escritor.Close();
         for (int i = 0; i < producoes.Length; i++)
             Console.WriteLine(producoes[i].ToStringFormatado());
     }
